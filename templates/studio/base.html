@@ -1,0 +1,25 @@
+{% extends "base/base.html" -%}
+{% block content -%}
+
+{% include "studio/modules/images.html" %}
+
+{%- endblock content %}
+
+
+{% block footer -%}
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('.splide', {
+            type: 'loop',
+            autoWidth: true,
+            focus: 'center',
+            lazyLoad: 'nearby',
+        }).mount();
+    });
+</script>
+
+{%- endblock footer %}
+
+

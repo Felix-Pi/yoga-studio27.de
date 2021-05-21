@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Editorial by HTML5 UP</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='frameworks/semanticUI/semantic.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='frameworks/bootstrap/css/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='frameworks/jQuery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='frameworks/fontAwesome/font-awesome.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='frameworks/semanticUI/semantic.min.js') }}"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            {% include "base/header.html" %}
+            {% block content %}{% endblock content %}
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    {% include "base/sidebar.html" %}
+
+</div>
+
+<!-- Scripts -->
+<script src="../../static/js/jquery.min.js"></script>
+<script src="../../static/js/browser.min.js"></script>
+<script src="../../static/js/breakpoints.min.js"></script>
+<script src="../../static/js/util.js"></script>
+<script src="../../static/js/main.js"></script>
+
+</body>
+</html>

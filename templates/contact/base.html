@@ -1,0 +1,56 @@
+{% extends "base/base.html" -%}
+{% block content -%}
+
+<section>
+<form class="ui form" action="actions/actions.php" method="POST">
+    <div class="ui form">
+        <div class="field">
+            <label>Name</label>
+            <div class="two fields">
+                <div class="field">
+                    <input type="text" name="contact_prename" placeholder="Vorname" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="contact_name" placeholder="Nachname" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type="email" name="contact_email" placeholder="Email" required>
+        </div>
+        <div class="field">
+            <label>Text</label>
+            <textarea name="contact_text"></textarea>
+        </div>
+
+
+        <div>
+            <input type="checkbox" id="contact_checkbox_datenschutz" name="contact_checkbox_datenschutz"
+                   required>
+            <label for="contact_checkbox_datenschutz">Ich habe die <a href="?p=datenschutz" target="_blank"
+                                                                      class="item">Datenschutzerklärung</a> zur
+                Kenntnis genommen und
+                erkläre
+                mich mit dieser einverstanden.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="contact_checkbox_newsletter" name="contact_checkbox_newsletter">
+            <label for="contact_checkbox_newsletter"><b>Kostenfrei</b> den Newsletter abonnieren.</label>
+        </div>
+
+        <br/>
+
+        <button class="ui button" type="submit">Senden</button>
+    </div>
+</form>
+</section>
+{%- endblock content %}
+
+
+{% block footer -%}
+{%- endblock footer %}
+
+

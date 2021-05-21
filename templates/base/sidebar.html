@@ -1,0 +1,63 @@
+<div id="sidebar">
+    <div class="inner">
+        <!-- Menu -->
+        <nav id="menu">
+            <header class="major">
+                <h2>Menu</h2>
+            </header>
+            <ul>
+                <li><a class="{% if request.url_rule.endpoint == 'home.home' %} active {% endif %}"
+                       href="{{url_for('home.home')}}">Startseite</a></li>
+                <li><a class="{% if request.url_rule.endpoint == 'home.timetable' %} active {% endif %}"
+                       href="{{url_for('home.timetable')}}">Stundenplan</a></li>
+                <li><a class="{% if request.url_rule.endpoint == 'home.pricing' %} active {% endif %}"
+                       href="{{url_for('home.pricing')}}">Kursgebühren</a></li>
+                <li><a class="{% if request.url_rule.endpoint == 'home.studio' %} active {% endif %}"
+                       href="{{url_for('home.studio')}}">Das Studio</a></li>
+                <li><a class="{% if request.url_rule.endpoint == 'home.contact' %} active {% endif %}"
+                       href="{{url_for('home.contact')}}">Kontakt</a></li>
+
+
+                <li><a target="_blank" class="{% if request.url_rule.endpoint == 'home.home' %} active {% endif %}"
+                       href="/tpl/index">Generic</a></li>
+                <li><a target="_blank" class="{% if request.url_rule.endpoint == 'home.home' %} active {% endif %}"
+                       href="/tpl/generic">Generic</a></li>
+                <li><a target="_blank" class="{% if request.url_rule.endpoint == 'home.home' %} active {% endif %}"
+                       href="/tpl/elements">Elements</a></li>
+                <li>
+                    <span class="opener">Rechtliches</span>
+                    <ul>
+                        <li><a class="{% if request.url_rule.endpoint == 'home.home' %} active {% endif %}" href="#">Datenschutz</a>
+                        </li>
+                        <li><a class="{% if request.url_rule.endpoint == 'home.home' %} active {% endif %}" href="#">Impressum</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Section -->
+        <section>
+            <header class="major">
+                <h2>Get in touch</h2>
+            </header>
+            <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem
+                ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus
+                aliquam.</p>
+            <ul class="contact">
+                <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+                <li class="icon solid fa-phone">(000) 000-0000</li>
+                <li class="icon solid fa-home">1234 Somewhere Road #8254<br/>
+                    Nashville, TN 00000-0000
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>.
+                Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        </footer>
+
+    </div>
+</div>

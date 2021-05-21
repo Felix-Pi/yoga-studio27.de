@@ -1,0 +1,36 @@
+{% extends "base/base.html" -%}
+{% block content -%}
+
+<section id="banner">
+    <div class="content">
+        <header>
+            <h2>Herzlich Willkommen im Studio27</h2>
+            <p>Yoga und mehr</p>
+        </header>
+        <p>Aufgrund der verlängerten staatlich angeordneten Corona-Maßnahmen bleibt das Studio bis auf Weiteres geschlossen. <br /><br />
+Der Unterricht findet - soweit möglich – online statt!<br /><br />
+Alle Infos unter info@studio27.de und direkt im Studio.<br />
+<br /><br />
+Bleiben Sie gesund!</p>
+        <ul class="actions">
+            <li><a href="#" class="button big">Learn More</a></li>
+        </ul>
+    </div>
+    <span class="image object">
+										<img src="{{ url_for('static', filename='images/studio/studio_1.jpg') }}"  alt=""/>
+									</span>
+</section>
+
+{%- endblock content %}
+
+
+{% block footer -%}
+<!--    <script>-->
+<!--        //all_symbols = '{{ all_symbols }}';-->
+<!--        all_symbols = '["APC.F"]';-->
+<!--        user_id = '{{ user.id }}';-->
+<!--    </script>-->
+<!--    <script src="{{ url_for('static', filename='js/index.js') }}"></script>-->
+{%- endblock footer %}
+
+
